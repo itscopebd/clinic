@@ -17,71 +17,79 @@
     background-color: #7fc7cb;
 } */
 
-.title{
+.title,
+.subTitle {
   font-size: 40px;
   font-weight: 700;
   color: var(--white);
   text-transform: capitalize;
   line-height: 50px;
-  }
-  .card__title{
-    color: black;
-    font-size: 25px;
-    margin: 10px 0;
-    font-weight: 600;
-    text-transform: capitalize;
-  }
-  .des{
-    font-size: 18px;
-    line-height: 25px;
-    color: var(--white);
-    margin: 20px 0;
-  }
-  .btn {
-    background-color: var(--primary_color);
-    padding: 11px 20px;
-    color: var(--white);
-    outline: none;
-    border: none;
-    font-size: 16px;
-    border-radius: 7px;
-    cursor: pointer;
-    position: relative;
-    transition: 2s;
 }
-
-.card__des{
+.subTitle {
+  font-size: 20px;
+  color: var(--midnight-green);
+  line-height: 30px;
+}
+.card__title {
+  color: black;
+  font-size: 25px;
+  margin: 10px 0;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.des {
+  font-size: 18px;
+  line-height: 25px;
+  color: var(--white);
+  margin: 20px 0;
+}
+.btn {
+  background-color: var(--primary_color);
+  padding: 11px 20px;
+  color: var(--white);
+  outline: none;
+  border: none;
+  font-size: 16px;
+  border-radius: 7px;
+  cursor: pointer;
+  position: relative;
+}
+.btn__wrap {
+  text-align: center;
+  margin-top: 20px;
+}
+.card__des {
   font-size: 17px;
   font-weight: normal;
   margin: 5px 0;
   color: black;
 }
-.section__gap{
+.section__gap {
   padding: 50px 0;
   overflow: hidden;
-}  
-.section__title{
+}
+.section__title {
   font-size: 50px;
   font-weight: 600;
   text-align: center;
   position: relative;
   color: var(--midnight-green);
 }
-.section__title:after,.section__title:before{
+.section__title:after,
+.section__title:before {
   width: 5%;
   content: "";
   height: 2px;
   position: absolute;
   border-radius: 5px;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   top: 100%;
   background-color: var(--primary_color);
 }
-.section__title:before{
+.section__title:before {
   width: 3%;
   margin-top: 5px;
- 
 }
 
 /* make collumn  */
@@ -91,28 +99,30 @@
   gap: 20px;
   align-items: center;
 }
-
-.col__four{
+.col__three {
   display: grid;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-  margin:40px 0;
-
+  margin-top: 40px;
 }
-
+.col__four {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 40px;
+}
 
 /* header css start here  */
 
 header {
   background-color: transparent; /* Set the background color to transparent */
-position: absolute;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 80px;
   display: flex;
   align-items: center;
-  
 }
 nav {
   display: flex;
@@ -131,43 +141,38 @@ ul li a {
 /* header css end here  */
 
 /* banner section css start here  */
-#banner{
-
-    width: 100%;
-    height: 100vh;
-    padding: 150px 0;
-    background-color: var(--midnight-green);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
- 
-
+#banner {
+  width: 100%;
+  height: 100vh;
+  padding: 150px 0;
+  background-color: var(--midnight-green);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
-#banner img{
-    width: 100%;
+#banner img {
+  width: 100%;
 }
 
 /* banner section css end here  */
 
 /* services section css start here  */
-#service .col__two{
+#service .col__two {
   margin-top: 40px;
-  
 }
 #service .col__two img {
   width: 100%;
   border-radius: 10px;
   filter: brightness(0.8);
-  transition: .5s;
+  transition: 0.5s;
 }
-#service .col__two img:hover{
+#service .col__two img:hover {
   filter: brightness(1);
-  transition: .5s;
+  transition: 0.5s;
 }
 
-
-#service .col__two .card{
+#service .col__two .card {
   padding: 10px;
   border-radius: 5px;
   border: 1px solid lightgray;
@@ -175,19 +180,148 @@ ul li a {
   gap: 20px;
   align-items: center;
 }
-#service .btn__wrap{
-  text-align: center;
-  margin-top: 20px;
-}
 
 /* services section css end here  */
 
+/*-------------------------
+doctor section css start here
+--------------------------*/
+/* #doctors {
+  overflow: hidden;
+} */
+
+#doctors .content__wrap {
+  border: 1px solid lightgray;
+  padding: 30px 10px;
+}
+#doctors .image__wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+#doctors .details__btn {
+  position: absolute;
+  top: -200%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  transition: 0.5s;
+}
+
+.overlay {
+  left: 0;
+  right: 0;
+  position: absolute;
+  background-color: var(--primary_color);
+  height: 0;
+  width: 100%;
+  bottom: 100%;
+  overflow: hidden;
+  transition: 0.5s;
+  opacity: 0.2;
+  border-radius: 10px;
+  cursor: pointer;
+}
+#doctors .content__wrap:hover .overlay {
+  height: 100%;
+  bottom: 0;
+  transition: 0.5s;
+}
+#doctors .content__wrap:hover .details__btn {
+  display: block;
+  transition: 0.5s;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#doctors img {
+  height: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100%;
+}
+#doctors .title {
+  font-size: 22px;
+  color: var(--primary_color);
+ 
+}
+/*-------------------------
+doctor section css end here
+--------------------------*/
 
 
 
-/* responsive css start here  */
+/*-------------------------
+articles section css end here
+--------------------------*/
+#articles .created__by{
+  display: flex;
+  gap: 20px;
 
-@media(min-width:1200px){
+}
+#articles .card{
+
+  padding: 30px 20px;
+  box-shadow: 0px 1px 3px 1px rgba(31,30,30,0.3);
+-webkit-box-shadow: 0px 1px 3px 1px rgba(31,30,30,0.3);
+-moz-box-shadow: 0px 1px 3px 1px rgba(31,30,30,0.3);
+position: relative;
+background-image: url("../images/doctor.png");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+z-index: 1;
+opacity: 1;
+overflow: hidden;
+border-radius: 5px;
+}
+
+ #articles .card:before{
+  position: absolute;
+  z-index: -1;
+  opacity: .8;
+ content: "";
+inset: 0;
+transition: .5s;
+background-color: var(--midnight-green);
+
+}
+
+.created__by p{
+  color: var(--white);
+}
+
+.date h4{
+  color: var(--white);
+}
+
+
+#articles .title {
+  margin: 12px 0px;
+  font-size: 22px;
+  color: var(--white);
+  line-height: 29px !important;
+}
+#articles .des{
+  color: var(--white);
+  font-weight: 500;
+}
+
+
+/*-------------------------
+articles section css end here
+--------------------------*/
+
+
+
+
+
+
+/*-------------------------
+responsive css start here
+--------------------------*/
+
+@media (min-width: 1200px) {
   .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -195,4 +329,6 @@ ul li a {
     width: 1200px;
   }
 }
-/* responsive css end here  */
+/*-------------------------
+responsive css end here
+--------------------------*/
