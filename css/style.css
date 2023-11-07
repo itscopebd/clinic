@@ -69,7 +69,7 @@
   overflow: hidden;
 }
 .section__title {
-  font-size: 50px;
+  font-size: 45px;
   font-weight: 600;
   text-align: center;
   position: relative;
@@ -243,58 +243,51 @@ doctor section css start here
 #doctors .title {
   font-size: 22px;
   color: var(--primary_color);
- 
 }
 /*-------------------------
 doctor section css end here
 --------------------------*/
 
-
-
 /*-------------------------
 articles section css end here
 --------------------------*/
-#articles .created__by{
+#articles .created__by {
   display: flex;
   gap: 20px;
-
 }
-#articles .card{
-
+#articles .card {
   padding: 30px 20px;
-  box-shadow: 0px 1px 3px 1px rgba(31,30,30,0.3);
--webkit-box-shadow: 0px 1px 3px 1px rgba(31,30,30,0.3);
--moz-box-shadow: 0px 1px 3px 1px rgba(31,30,30,0.3);
-position: relative;
-background-image: url("../images/doctor.png");
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
-z-index: 1;
-opacity: 1;
-overflow: hidden;
-border-radius: 5px;
+  box-shadow: 0px 1px 3px 1px rgba(31, 30, 30, 0.3);
+  -webkit-box-shadow: 0px 1px 3px 1px rgba(31, 30, 30, 0.3);
+  -moz-box-shadow: 0px 1px 3px 1px rgba(31, 30, 30, 0.3);
+  position: relative;
+  background-image: url("../images/doctor.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+  opacity: 1;
+  overflow: hidden;
+  border-radius: 5px;
 }
 
- #articles .card:before{
+#articles .card:before {
   position: absolute;
   z-index: -1;
-  opacity: .8;
- content: "";
-inset: 0;
-transition: .5s;
-background-color: var(--midnight-green);
-
+  opacity: 0.8;
+  content: "";
+  inset: 0;
+  transition: 0.5s;
+  background-color: var(--midnight-green);
 }
 
-.created__by p{
+.created__by p {
   color: var(--white);
 }
 
-.date h4{
+.date h4 {
   color: var(--white);
 }
-
 
 #articles .title {
   margin: 12px 0px;
@@ -302,20 +295,85 @@ background-color: var(--midnight-green);
   color: var(--white);
   line-height: 29px !important;
 }
-#articles .des{
+#articles .des {
   color: var(--white);
   font-weight: 500;
 }
-
 
 /*-------------------------
 articles section css end here
 --------------------------*/
 
+/*-------------------------
+Review section css start here
+--------------------------*/
+#review .splide {
+  margin-top: 40px;
+}
+#review .img__wrap {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+}
+#review .img__wrap img {
+  width: 100%;
+  border-radius: 50%;
+  animation-timing-function: linear;
+  animation-duration: 5s;  
+  animation-iteration-count: infinite;
+  animation-name: example;
+  transition: .5s;
+}
+#review .card{
+  text-align: center;
+}
+#review .content{
+margin-top: 10px;
+}
 
+.splide__arrow {
+  background: var(--primary_color);
+}
+.splide__arrow svg {
+  fill: #fff;
+}
 
+@keyframes example {
+  0% {
+    border: 3px solid var(--midnight-green);
+    box-shadow: 0px 1px 3px 1px rgba(31, 30, 30, 0.3);
+    transition: .5s;
+  }
+  20% {
+    border: 3px solid var(--secondary_color);
+    box-shadow: 0px 1px 3px 1px rgba(31, 30, 30, 0.3);
+    transition: .5s;
+  }
+  40% {
+    border: 3px solid var(--primary_color);
+    box-shadow: 0px 1px 3px 1px rgba(31, 30, 30, 0.3);
+    transition: .5s;
+  }
+  60% {
+    border: 3px solid var(--secondary_color);
+    box-shadow: 0px 1px 3px 1px rgba(31, 30, 30, 0.3);
+    transition: .5s;
+  }
+  80% {
+    border: 3px solid var(--midnight-green);
+    box-shadow: 0px 1px 3px 1px rgba(31, 30, 30, 0.3);
+    transition: .5s;
+  }
+  100% {
+    border: 3px solid var(--secondary_color);
+    box-shadow: 0px 1px 3px 1px rgba(31, 30, 30, 0.3);
+    transition: .5s;
+  }
+}
 
-
+/*-------------------------
+Review section css end here
+--------------------------*/
 
 /*-------------------------
 responsive css start here
