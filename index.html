@@ -12,8 +12,11 @@
 
     <!-- splide css  -->
     <link rel="stylesheet" href="css/splide.min.css" />
-
+<!-- styles  -->
     <link rel="stylesheet" href="css/style.css" />
+    <!-- fontawesome  -->
+    <script src="https://kit.fontawesome.com/286c7c8f95.js" crossorigin="anonymous"></script>
+
   </head>
   <body>
     <header>
@@ -59,6 +62,63 @@
         </div>
       </section>
       <!-- banner section html end here  -->
+
+      <!-- about us section html start here  -->
+      <section id="about__us" class="section__gap">
+        <div class="container">
+          <div class="col__two">
+            <div class="content">
+              <h3 class="subTitle">About Us</h3>
+              <h3 class="title">Experienced Workers</h3>
+              <p class="des"> Aliquam faucibus, odio nec commodo aliquam, neque felis placerat dui, a porta ante lectus dapibus est. Aliquam </p>
+              <div class="filter__btn__wrap">
+                <button class=" active filter btn" onclick="filter('vission')">Vision</button>
+                <button class="btn filter" onclick="filter('mission')">Mission</button>
+                <button class="btn filter"  onclick="filter('strategy')">Strategy</button>
+              </div>
+              <div class="filter__content" id="vission">
+                <p class="des">Aliquam faucibus, odio nec commodo aliquam, neque felis placerat dui, a porta ante lectus dapibus est. Aliquam a bibendum mi, sed condimentum</p>
+                <div class="filter__list__content">
+                  <ul>
+                    <li><i class="fa-solid fa-check"></i> Sonsectetur adipisicing elit </li>
+                    <li><i class="fa-solid fa-check"></i> Exercitation ullamco laboris</li>
+                    <li><i class="fa-solid fa-check"></i>Eiusmod tempor incididunt </li>
+                    <li><i class="fa-solid fa-check"></i>Aolore magna aliqua </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="filter__content" id="mission">
+                <p class="des">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta autem dolorum magnam nemo? Magnam nesciunt atque odit sunt, commodi quibusdam?</p>
+                <div class="filter__list__content">
+                  <ul>
+                    <li><i class="fa-solid fa-check"></i> Lorem ipsum dolor. </li>
+                    <li><i class="fa-solid fa-check"></i> Lorem ipsum dolor. </li>
+                    <li><i class="fa-solid fa-check"></i> Lorem ipsum dolor. </li>
+                    <li><i class="fa-solid fa-check"></i> Lorem ipsum dolor. </li>
+                    
+                  </ul>
+                </div>
+              </div>
+              <div class="filter__content" id="strategy">
+                <p class="des">Prioritize patient satisfaction and positive outcomes. Implement patient-centric practices to enhance the overall experience. Define the clinic's vision and mission.</p>
+                <div class="filter__list__content">
+                  <ul>
+                    <li><i class="fa-solid fa-check"></i> Patient-Centric Care </li>
+                    <li><i class="fa-solid fa-check"></i> Services and Specializations</li>
+                    <li><i class="fa-solid fa-check"></i>Regulatory Compliance </li>
+                    <li><i class="fa-solid fa-check"></i>Operational Efficiency </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="image">
+              <img src="images/about-banner.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- about us section html end here  -->
 
       <!-- our services section html start here  -->
       <section id="service" class="section__gap">
@@ -319,12 +379,16 @@
               </div>
             </div>
           </div>
-          <!-- <div class="card"></div> -->
         </div>
       </section>
 
       <!-- review section html end here  -->
     </main>
+
+    <footer>
+      <div class="container"></div>
+    </footer>
+
     <script src="js/splide.min.js"></script>
     <script src="js/main.js"></script>
     <script>

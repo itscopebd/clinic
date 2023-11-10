@@ -12,10 +12,8 @@
   --midnight-green: hsl(186, 100%, 19%);
   --secondary_color: #90ee90;
   --white: #fff;
+  --alice-blue:hsl(187, 25%, 94%);
 }
-/* body{
-    background-color: #7fc7cb;
-} */
 
 .title,
 .subTitle {
@@ -92,7 +90,9 @@
   margin-top: 5px;
 }
 
-/* make collumn  */
+/*====================
+ make collumn 
+======================*/
 .col__two {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -112,10 +112,12 @@
   margin-top: 40px;
 }
 
-/* header css start here  */
+/*====================
+ header css start here
+ ======================*/
 
 header {
-  background-color: transparent; /* Set the background color to transparent */
+  background-color: transparent; 
   position: absolute;
   top: 0;
   left: 0;
@@ -138,9 +140,13 @@ ul li a {
   color: var(--white);
 }
 
-/* header css end here  */
+/*====================
+ header css end here
+ ======================*/
 
-/* banner section css start here  */
+/*====================
+banner section css start here
+======================*/
 #banner {
   width: 100%;
   height: 100vh;
@@ -155,9 +161,75 @@ ul li a {
   width: 100%;
 }
 
-/* banner section css end here  */
+/*====================
+banner section css end here
+======================*/
+#about__us{
 
-/* services section css start here  */
+}
+.filter__btn__wrap{
+  margin: 25px 0;
+}
+#about__us .btn{
+background-color: var(--alice-blue);
+color: var(--midnight-green);
+}
+#about__us .active.btn{
+background-color: var(--primary_color);
+color: var(--white);
+}
+#about__us .title{
+  color: var(--primary_color);
+  margin: 20px 0;
+}
+#about__us .des{
+  color: #000;
+  font-size: 17px;
+}
+#about__us img{
+width: 100%;
+}
+.filter__list__content ul {
+  display: grid;
+  justify-content: space-between;
+  gap: 30px;
+  grid-template-columns: repeat(2,1fr);
+  align-items: center;
+}
+i.fa-solid.fa-check {
+  width: 18px;
+  height: 18px;
+  line-height: 18px;
+  border: 1px solid var(--primary_color);
+  text-align: center;
+  border-radius: 50%;
+  margin-right: 10px;
+  color: var(--primary_color);
+  font-size: 12px;
+}
+
+/*====================
+about us section css Start here
+======================*/
+
+
+
+/*====================
+about us section css end here
+======================*/
+
+
+
+
+
+
+
+
+
+
+/*====================
+services section css start here
+======================*/
 #service .col__two {
   margin-top: 40px;
 }
@@ -181,14 +253,13 @@ ul li a {
   align-items: center;
 }
 
-/* services section css end here  */
+/*====================
+services section css end here
+======================*/
 
-/*-------------------------
+/*====================
 doctor section css start here
---------------------------*/
-/* #doctors {
-  overflow: hidden;
-} */
+======================*/
 
 #doctors .content__wrap {
   border: 1px solid lightgray;
@@ -244,13 +315,13 @@ doctor section css start here
   font-size: 22px;
   color: var(--primary_color);
 }
-/*-------------------------
+/*====================
 doctor section css end here
---------------------------*/
+======================*/
 
-/*-------------------------
+/*====================
 articles section css end here
---------------------------*/
+======================*/
 #articles .created__by {
   display: flex;
   gap: 20px;
@@ -300,13 +371,13 @@ articles section css end here
   font-weight: 500;
 }
 
-/*-------------------------
+/*====================
 articles section css end here
---------------------------*/
+======================*/
 
-/*-------------------------
+/*====================
 Review section css start here
---------------------------*/
+======================*/
 #review .splide {
   margin-top: 40px;
 }
@@ -371,13 +442,13 @@ margin-top: 10px;
   }
 }
 
-/*-------------------------
+/*====================
 Review section css end here
---------------------------*/
+======================*/
 
-/*-------------------------
+/*====================
 responsive css start here
---------------------------*/
+======================*/
 
 @media (min-width: 1200px) {
   .container {
@@ -387,6 +458,6 @@ responsive css start here
     width: 1200px;
   }
 }
-/*-------------------------
+/*====================
 responsive css end here
---------------------------*/
+======================*/
